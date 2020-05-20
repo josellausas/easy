@@ -19,8 +19,8 @@ jobs:
         sudo apt-get install lua5.2 luarocks
     - name: Dependencies
       run: |
-        luarocks install moonscript
-        luarocks install busted
-        luarocks install luasocket
+        luarocks install --local moonscript
+        luarocks install --local busted
+        luarocks install --local luasocket
     - name: Test
       run: busted
