@@ -1,6 +1,7 @@
 # EasyRAD
 
 ![Tests](https://github.com/josellausas/easy/workflows/Tests/badge.svg)
+![Docker Image CI](https://github.com/josellausas/easy/workflows/Docker%20Image%20CI/badge.svg)
 
 Rapid Application Development with Moonscript
 
