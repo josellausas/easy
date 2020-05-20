@@ -16,7 +16,7 @@ jobs:
     - name: Setup
       run: |
         sudo apt-get update
-        sudo apt-get install lua-jit luarocks
+        sudo apt-get install lua5.2 luarocks
     - name: Dependencies
       run: |
         luarocks install moonscript
