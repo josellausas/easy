@@ -1,5 +1,5 @@
 class App
   run: =>
-    print "Hello easyRAD!"
+    return "Hello easyRAD!"
 
 return App
