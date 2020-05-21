@@ -19,11 +19,12 @@ describe 'Linked List', ->
     assert.equal ll\pop!, nil
   it 'can store many items', ->
     count = 1
-    while count <= 10000
+    while count <= 10
       ll\insert count
       count = count + 1
-    assert.equal ll.size, 10000
+    assert.equal ll.size, 10
   it 'can clear all items', ->
     ll\clear!
     assert.equal ll.size, 0
+  
   return
