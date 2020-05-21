@@ -20,11 +20,6 @@ jobs:
     - name: Dependencies
       run: ./install_rocks.sh github
     - name: Test
-      run: |
-        busted --coverage
-        luacov-coveralls -t ${{ secrets.COVERALLS_TOKEN }}
-    - uses: actions/checkout@v1
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+      run: busted --coverage
+    - name: Coverage
+      run: luacov-coveralls -t ${{ secrets.COVERALLS_TOKEN }}
