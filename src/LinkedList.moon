@@ -6,7 +6,6 @@ class Node
     @next = nil
 
 
-
 --- Linked List
 class LinkedList
   new: =>
