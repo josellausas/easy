@@ -20,7 +20,9 @@ jobs:
     - name: Dependencies
       run: ./install_rocks.sh github
     - name: Test
-      run: busted --coverage
+      run: |
+        busted --coverage
+        luacov-coveralls
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:

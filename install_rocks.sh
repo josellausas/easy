@@ -3,7 +3,7 @@ set -e
 echo "Installing rocks"
 
 # Add any extra luarocks dependencies here:
-rocks=( "moonscript" "busted" "luasocket" "luacov" )
+rocks=( "moonscript" "busted" "luasocket" "luacov" "luacov-coveralls" )
 
 installCmd="luarocks install"
 if [ "$1" == "github" ]; then
