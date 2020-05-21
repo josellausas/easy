@@ -20,4 +20,8 @@ jobs:
     - name: Dependencies
       run: ./install_rocks.sh github
     - name: Test
-      run: busted
+      run: busted --coverage
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
