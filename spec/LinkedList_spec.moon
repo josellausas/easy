@@ -17,6 +17,13 @@ describe 'Linked List', ->
     assert.equal ll\pop!, 2
     assert.equal ll\pop!, 1
     assert.equal ll\pop!, nil
-  it 'can find an item', ->
-    pending "Implement"
+  it 'can store many items', ->
+    count = 1
+    while count <= 10000
+      ll\insert count
+      count = count + 1
+    assert.equal ll.size, 10000
+  it 'can clear all items', ->
+    ll\clear!
+    assert.equal ll.size, 0
   return
