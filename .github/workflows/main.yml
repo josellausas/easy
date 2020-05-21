@@ -18,9 +18,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install lua5.1 lua5.1-dev luarocks
     - name: Dependencies
-      run: |
-        sudo luarocks install moonscript
-        sudo luarocks install busted
-        sudo luarocks install luasocket
+      run: ./install_rocks.sh github
     - name: Test
       run: busted
