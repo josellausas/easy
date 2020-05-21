@@ -20,6 +20,6 @@ jobs:
     - name: Dependencies
       run: ./install_rocks.sh github
     - name: Test
-      run: busted --coverage
+      run: busted -c
     - name: Coverage
       run: luacov-coveralls -t ${{ secrets.COVERALLS_TOKEN }}
